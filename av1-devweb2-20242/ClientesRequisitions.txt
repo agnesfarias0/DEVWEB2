@@ -1,0 +1,20 @@
+#Busca todos os clientes
+GET   localhost:8080/clientes
+
+#Busca cliente por ID
+GET   localhost:8080/clientes/id
+
+#Insere Cliente
+POST   localhost:8080/clientes
+"{\n\t\"nome\": \"agnes\" ,\n\t\"cpf\": \"123.456\",\n\t\"dataNascimento\": \"05/05/1998\",\n\t\"genero\": \"FEMININO\"\t\n}"
+
+#Atualiza Cliente pelo ID
+PUT   localhost:8080/clientes/id
+"{\n\t\"nome\": \"agnes\" ,\n\t\"cpf\": \"123.456\",\n\t\"dataNascimento\": \"05/05/1998\",\n\t\"genero\": \"FEMININO\"\t\n}"
+
+#Deleta Cliente pelo ID
+DELETE   localhost:8080/clientes/id
+
+#Delete Lógico Cliente
+DELETE   localhost:8080/clientes/logic/id
+

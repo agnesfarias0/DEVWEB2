@@ -1,0 +1,20 @@
+#Busca todos os produtos
+GET   localhost:8080/produtos
+
+#Busca produto por ID
+GET   localhost:8080/produtos/id
+
+#Insere Produto
+POST   localhost:8080/produtos
+"{\n\t\"nomeProduto\": \"leite\" ,\n\t\"marca\": \"betania\",\n\t\"dataFabricacao\": \"05/05/2024\",\n\t\"dataValidade\": \"05/08/2024\",\n\t\"lote\": \"45\",\n\t\"genero\": \"ALIMENTICIO\"\t\n}"
+
+#Atualiza Produto pelo ID
+PUT   localhost:8080/produtos/id
+"{\n\t\"nomeProduto\": \"leite\" ,\n\t\"marca\": \"betania\",\n\t\"dataFabricacao\": \"05/05/2024\",\n\t\"dataValidade\": \"05/08/2024\",\n\t\"lote\": \"45\",\n\t\"genero\": \"ALIMENTICIO\"\t\n}"
+
+#Deleta Produto pelo ID
+DELETE   localhost:8080/produtos/id
+
+#Delete Lógico Cliente
+DELETE   localhost:8080/produtos/logic/id
+
